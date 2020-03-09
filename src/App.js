@@ -74,17 +74,25 @@ delTodo = () => {
 // }
   render() {
     return (
-      <div>
-        <div>
+      <div className="todobox">
+        <div className="todoTop" >
       <h1>To Do List</h1>
-      <ToDoForm addItem={this.addItem}/>          
+      <button
+      onClick={this.delTodo}
+      type='button'
+      style={{color:'rgb(220, 42, 255)', border:'0', background:'#2d2d37', padding: '0% 0%', width: '14%', fontSize:'1.3em'}}
+      >Destroy Finished</button>
+                
         </div>
+        <div className="todoBottom">
         <Todo
         todo={this.state.todo}
         toggleDone={this.toggleDone}
         delTodo={this.delTodo}
         
         />
+        <ToDoForm addItem={this.addItem}/>
+        </div>
       </div>
       );
   }

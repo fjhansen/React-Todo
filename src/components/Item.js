@@ -4,7 +4,7 @@ const Item = props => {
   return(
     <div
       onClick={() => props.toggleDone(props.item.id)}
-      className={`item${props.item.done ? 'done' : ''}`}
+      className={`item${props.item.done ? ' done' : ''}`}
     >
     <p>{props.item.name}</p>
     </div>

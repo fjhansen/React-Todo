@@ -4,7 +4,7 @@ import Item from './Item'
 
 const Todo = props => {
   return(
-    <div>
+    <div className="todo-list">
       {props.todo.map(item => (
         <Item
         key={item.id}
@@ -12,10 +12,7 @@ const Todo = props => {
         toggleDone={props.toggleDone}
         />
       ))}
-      <button
-      onClick={props.delTodo}
-      type='button'
-      >Destroy Finished</button>
+      
     </div>
   )
 }

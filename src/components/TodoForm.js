@@ -30,7 +30,7 @@ class ToDoForm extends React.Component {
         value={this.state.item}
         onChange={this.handleChanges}
         />
-        <button>Add</button>
+        <button style={{color:'rgb(220, 42, 255)', border:'0', background:'#2d2d37', padding: '1% 3%', width: '100%', fontSize:'1.3em'}}>Add</button>
       </form>
     );
   }
